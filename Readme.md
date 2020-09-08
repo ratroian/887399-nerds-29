@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ruslan Troyan](https://up.htmlacademy.ru/htmlcss/29/user/887399).
-* Наставник: `Неизвестно`.
+* Наставник: `Кирилл Генералов`(https://htmlacademy.ru/profile/hifull).
 
 ---
 
