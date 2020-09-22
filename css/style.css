@@ -1,5 +1,28 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/roboto.woff2')
+           format('woff2'),
+         url('../fonts/roboto.woff')
+           format('woff');
+  }
+
+  @font-face {
+    font-family: Robotobold;
+    src: url('../fonts/robotobold.woff2')
+        format('woff2'),
+        url('../fonts/roboto.woff')
+        format('woff');
+  }
+
+  @font-face {
+    font-family: Robotomedium;
+    src: url('../fonts/robotomedium.woff2')
+        format('woff2'),
+        url('../fonts/robotomedium.woff')
+      format('woff');
+  }
+
 :root {
-    
     --basic-black: #000000;
     --light-black: #283136;
     --basic-white: #ffffff;
@@ -43,7 +66,9 @@ img {
     color: var(--basic-black);
 }
   
-.site-navigation {
+.list-styles-reset {
+    margin: 0;
+    padding: 0; 
     list-style: none;
 }
 
@@ -53,24 +78,174 @@ img {
   
   /* User navigation */
   
-  
 .site-navigation a,
 .shoping-basket-link a {
     color: var(--basic-black);
 }
   
-  .site-navigation a:hover,
-  .site-navigation a:focus,
-  .shoping-basket-link a:hover,
-  .shoping-basket-link a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus,
+.shoping-basket-link a:hover,
+.shoping-basket-link a:focus {
     background-color: var(--special-red);
 }
 
-.list-styles-reset {
-  margin: 0;
-  padding: 0; 
-  list-style: none;
+/*about-us*/
+
+.tagline-1 {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 500;
 }
 
-  
+.under-tagline-1 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/* Button */
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    font-size: 16px;
+    line-height: 1.125;
+}
+
+.about-us-link {
+    background-color: var(--special-red);
+}
+
+.website {
+    background-color: var(--special-red);
+}
+
+.apps {
+    background-color: var(--special-green);
+}
+
+.presentation {
+    background-color: var(--special-yellow);
+}
+
+.mailto {
+    background-color: var(--special-red);
+}
+
+/* Services*/
+
+.services {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.services h3 {
+    text-transform: uppercase;
+    font-style: 24px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/*features*/
+
+.tagline-2 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.under-tagline-2 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.doing-work {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--light-black);
+    font-weight: bold;
+}
+
+.doing-work-list {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--light-black);
+}
+
+.indicators {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    color: var(--basic-black);
+}
+
+.indicators-item {
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--light-black);
+}
+
+.indicators-percent {
+    font-size: 45px;
+    line-height: 1.42;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.statistics sup {
+    font-size: 26px;
+    line-height: 1.54;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+/* Clients lists */
+
+.clients-lists {
+    opacity: 0,2;
+}
+
+/* Contacts*/
+
+.contacts {
+    background-color: var(--basic-white);
+}
+.contacts-info-name {
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.contacts-info{
+    font-size: 16px;
+    font-weight: 1.125;
+    color: var(--basic-dark);
+}
+
+/*footer*/
+
+.footer-tagline {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.footer-promo {
+    font-size: 16px;
+    line-height: 1.37;
+}
+
+
+
 
