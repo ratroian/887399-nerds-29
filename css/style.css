@@ -6,20 +6,20 @@
            format('woff');
   }
 
-  @font-face {
+@font-face {
     font-family: Robotobold;
     src: url('../fonts/robotobold.woff2')
-        format('woff2'),
-        url('../fonts/roboto.woff')
-        format('woff');
+            format('woff2'),
+         url('../fonts/roboto.woff')
+            format('woff');
   }
 
   @font-face {
     font-family: Robotomedium;
     src: url('../fonts/robotomedium.woff2')
-        format('woff2'),
-        url('../fonts/robotomedium.woff')
-      format('woff');
+            format('woff2'),
+         url('../fonts/robotomedium.woff')
+            format('woff');
   }
 
 :root {
@@ -85,20 +85,21 @@ img {
 .site-navigation a:hover,
 .site-navigation a:focus,
 .shoping-basket-link a:hover,
-.shoping-basket-link a:focus {
-    background-color: var(--special-red);
+.main-header .shoping-basket-link a:focus {
+    border-bottom: 2px solid var(--special-red);
+    padding-bottom: 13px;
 }
 
 /*about-us*/
 
-.tagline-1 {
+.slogan-1 {
     font-size: 55px;
     line-height: 1;
     font-weight: 500;
     color: #000000;
 }
 
-.under-tagline-1 {
+.under-slogan-1 {
     font-size: 16px;
     line-height: 1.5;
     color: #283136;
@@ -164,17 +165,17 @@ img {
 
 /*features*/
 
-.tagline-2 {
+.slogan-2 {
     font-size: 45px;
     line-height: 1;
 }
 
-.under-tagline-2 {
+.under-slogan-2 {
     font-size: 16px;
     line-height: 1.5;
 }
 
-.doing-work {
+.skills {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.5;
@@ -182,7 +183,7 @@ img {
     font-weight: bold;
 }
 
-.doing-work-list {
+.skills-list {
     font-size: 16px;
     line-height: 1.5;
     color: var(--light-black);
@@ -228,7 +229,7 @@ img {
 .contacts {
     background-color: var(--basic-white);
 }
-.contacts-info-name {
+.contacts-name {
     font-size: 18px;
     line-height: 1.67;
     font-weight: bold;
@@ -255,6 +256,8 @@ img {
     font-size: 16px;
     line-height: 1.37;
 }
+
+/*list styles reset*/
 
 .list-styles-reset {
     margin: 0;
