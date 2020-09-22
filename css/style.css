@@ -64,7 +64,6 @@ img {
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
-    
 }
   
 /*.site-navigation-current a:not([href]) {
@@ -84,8 +83,8 @@ img {
   
 .site-navigation a:hover,
 .site-navigation a:focus,
-.shoping-basket-link a:hover,
-.main-header .shoping-basket-link a:focus {
+.shoping-basket-link:hover,
+.shoping-basket-link:focus {
     border-bottom: 2px solid var(--special-red);
     padding-bottom: 13px;
 }
