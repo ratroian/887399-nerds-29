@@ -65,6 +65,11 @@ img {
     line-height: 30px;
     color: var(--basic-black);
 }
+
+.main-header,
+.about-us {
+    background-color: var(--basic-neutral);
+}
   
 /*.site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
