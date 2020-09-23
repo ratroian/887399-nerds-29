@@ -279,4 +279,21 @@ img {
     text-align: center;
 }
 
+.sorting {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sorting-list {
+    font-size: 14px;
+    line-height: 1.29;
+    opacity: 0.3;
+}
+
+.template {
+    
+}
+
 
