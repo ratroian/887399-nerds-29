@@ -269,5 +269,14 @@ img {
     list-style: none;
 }
 
+/* catalog.html*/
+
+.store {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
 
 
