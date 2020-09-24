@@ -1,17 +1,17 @@
 @font-face {
-    font-family: Roboto;
-    src: url('../fonts/roboto.woff2')
-           format('woff2'),
-         url('../fonts/roboto.woff')
-           format('woff');
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.woff2') format('woff2'),
+         url('../fonts/roboto.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
   }
 
 @font-face {
-    font-family: Robotobold;
-    src: url('../fonts/robotobold.woff2')
-            format('woff2'),
-         url('../fonts/roboto.woff')
-            format('woff');
+    font-family: 'Roboto';
+    src: url('../fonts/robotobold.woff2') format('woff2'),
+         url('../fonts/roboto.woff') format('woff');
+         font-weight: bold;
+         font-weight: normal;
   }
 
   @font-face {
@@ -70,6 +70,10 @@ img {
 .about-us {
     background-color: var(--basic-neutral);
 }
+
+.container {
+    text-align: center;
+}
   
 /*.site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
@@ -96,14 +100,14 @@ img {
 
 /*about-us*/
 
-.slogan-1 {
+.slogan:nth-child(1) {
     font-size: 55px;
     line-height: 1;
     font-weight: 500;
     color: #000000;
 }
 
-.under-slogan-1 {
+.under-slogan:nth-child(1) {
     font-size: 16px;
     line-height: 1.5;
     color: #283136;
@@ -169,12 +173,12 @@ img {
 
 /*features*/
 
-.slogan-2 {
+.slogan:nth-child(2) {
     font-size: 45px;
     line-height: 1;
 }
 
-.under-slogan-2 {
+.under-slogan:nth-child(2) {
     font-size: 16px;
     line-height: 1.5;
 }
@@ -241,7 +245,7 @@ img {
     color: var(--basic-black);
 }
 
-.contacts-info{
+.contacts-phone{
     font-size: 16px;
     font-weight: 1.125;
     color: var(--basic-dark);
@@ -249,14 +253,14 @@ img {
 
 /*footer*/
 
-.footer-tagline {
+.appeal {
     font-size: 36px;
     line-height: 1;
     font-weight: bold;
     color: var(--basic-black);
 }
 
-.footer-promo {
+.promo {
     font-size: 16px;
     line-height: 1.37;
 }
@@ -290,10 +294,12 @@ img {
     font-size: 14px;
     line-height: 1.29;
     opacity: 0.3;
+    text-transform: uppercase;
+    color: var(--basic-black);
 }
 
-.template {
-    
+.template-list {
+    align-items: center;
 }
 
 
