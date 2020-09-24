@@ -2,7 +2,7 @@
     font-family: 'Roboto';
     src: url('../fonts/roboto.woff2') format('woff2'),
          url('../fonts/roboto.woff') format('woff');
-         font-weight: 300;
+         font-weight: 400;
          font-style: normal;
   }
 
@@ -18,7 +18,7 @@
     font-family: 'Roboto';
     src: url('../fonts/robotomedium.woff2') format('woff2'),
          url('../fonts/robotomedium.woff') format('woff');
-         font-weight: 400;
+         font-weight: 500;
          font-style: normal;
   }
 
@@ -104,6 +104,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     color: #283136;
+    font-weight: 400;
 }
 
 /*Slider*/
@@ -169,6 +170,7 @@ img {
 .slogan:nth-child(2) {
     font-size: 45px;
     line-height: 1;
+    font-weight: 500;
 }
 
 .under-slogan:nth-child(2) {
@@ -256,7 +258,6 @@ img {
 .promo {
     font-size: 16px;
     line-height: 1.37;
-    font-weight: 300;
     color: var(--strong-grey);
 }
 
