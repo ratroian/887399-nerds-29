@@ -232,6 +232,7 @@ img {
 .contacts {
     background-color: var(--basic-white);
 }
+
 .contacts-name {
     font-size: 18px;
     line-height: 1.67;
@@ -271,7 +272,7 @@ img {
 
 /* catalog.html*/
 
-.store {
+.page-title {
     font-size: 55px;
     line-height: 1;
     font-weight: 500;
@@ -279,9 +280,12 @@ img {
     text-align: center;
 }
 
+/*Сортировка*/
+
 .sorting {
     font-size: 18px;
     font-weight: 700;
+    line-height: 1.67;
     text-transform: uppercase;
     color: var(--basic-black);
 }
@@ -291,11 +295,33 @@ img {
     line-height: 1.29;
     opacity: 0.3;
     text-transform: uppercase;
-    color: var(--basic-black);
 }
+
+/*Шаблоны*/
 
 .template-list {
     align-items: center;
 }
+
+/*Пагинация*/
+
+.pagination {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.12;
+    text-align: center;
+    color: var(--basic-black);
+}
+
+.pagination-item a {
+    background-color: var(--basic-neutral);
+}
+
+
+
+
+
+
+
 
 
