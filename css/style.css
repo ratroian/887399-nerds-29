@@ -54,6 +54,7 @@ body {
 
 .page a {
     text-decoration: none;
+    color: var(--basic-black);
 }
   
 img {
@@ -315,6 +316,36 @@ img {
 
 .pagination-item a {
     background-color: var(--basic-neutral);
+}
+
+.template button {
+    background-color: var(--special-red);
+    display: block;
+    font-size: 16px;
+    line-height: 1.125;
+    font-weight: 500;
+    color: var(--basic-white);
+    text-align: center;
+    border: none;
+}
+
+.item-name {
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--basic-black);
+    background-color: var(--basic-neutral);
+}
+
+.item-description {
+    font-size: 16px;
+    line-height: 1.12;
+    text-align: center;
+    color: var(--basic-dark);
+    background-color: var(--basic-neutral);
+
 }
 
 
