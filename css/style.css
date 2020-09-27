@@ -318,6 +318,11 @@ img {
     background-color: var(--basic-neutral);
 }
 
+.pop-up {
+    background-color: var(--basic-neutral);
+    text-align: center;
+}
+
 .template button {
     background-color: var(--special-red);
     display: block;
@@ -325,7 +330,6 @@ img {
     line-height: 1.125;
     font-weight: 500;
     color: var(--basic-white);
-    text-align: center;
     border: none;
 }
 
@@ -334,18 +338,13 @@ img {
     line-height: 1.67;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
     color: var(--basic-black);
-    background-color: var(--basic-neutral);
 }
 
 .item-description {
     font-size: 16px;
     line-height: 1.12;
-    text-align: center;
     color: var(--basic-dark);
-    background-color: var(--basic-neutral);
-
 }
 
 
