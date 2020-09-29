@@ -31,12 +31,10 @@
       <section class="filter">
         <h2>Форма для фильтра</h2>
         <span></span>
-      
         <!--Здесь будет форма для фильтра-->
-      
       </section>
-      <section class="sorting">
         <!--Сортировка товара-->
+      <section class="sorting">
         <h2>Сортировать</h2>
         <ul class="sorting-list list-styles-reset">
           <li class="sorting-price">По цене</li>
@@ -46,77 +44,91 @@
           <li class="sorting-up-down">Вверх/Вниз</li>
         </ul>
       </section>
-      <section>
+      <section class="template">
         <h2>Список готовых шаблонов</h2>
         <ul class="template-list list-styles-reset">
           <li class="template-item">
             <a href="#">
-              <h3>Sedona</h3>
-              <p>Информационный сайт для туристов </p>
+              <div class="pop-up">
+                <h3 class="item-name">Sedona</h3>
+                <p class="item-description">Информационный сайт для туристов </p>
+                <button type="submit">9 900 ₽</button>
+              </div>
               <img src="img/catalog-sedona.jpg" alt="Информационный сайт для туристов Sedona" width="359" height="578" alt="Sedona">
             </a>
-            <button type="submit">9900 RUB</button>
           </li>
           <li class="template-item">
             <a href="#">
-              <h3>Pink</h3>
+              <h3 class="item-name">Pink</h3>
               <img src="img/catalog-pink.jpg" width="358" height="578" alt="Pink сервис">
             </a>
           </li>
           <li class="template-item">
             <a href="#">
-              <h3>Borodinski</h3>
+              <h3 class="item-name">Borodinski</h3>
               <img src="img/catalog-barbershop.jpg" width="358" height="578" alt="Borodinski Барбершоп">
             </a>
           </li>
           <li class="template-item">
             <a href="#">
-              <h3>Mishka</h3>
+              <h3 class="item-name">Mishka</h3>
               <img src="img/catalog-mishka.jpg" width="359" height="578" alt="Mishka игрушки ручной работы">
             </a>
           </li>
           <li class="template-item">
             <a href="#">
-              <h3>Aplus</h3>
+              <h3 class="item-name">Aplus</h3>
               <img src="img/catalog-aplus.jpg" width="359" height="578" alt="Aplus обучение">
             </a>
           </li>
           <li class="template-item">
             <a href="#">
-              <h3>Кваст</h3>
+              <h3 class="item-name">Кваст</h3>
               <img src="img/catalog-kvast.jpg" width="359" height="578" alt="Kvast крафтовый квас">
             </a>
           </li>
         </ul>
       </section>
       <!--Пагинация-->
-      <div>
-        <ul>
-          <li>
+      <div class="pagination">
+        <ul class="pagination-list list-styles-reset">
+          <li class="pagination-item">
             <a>1</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">2</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">Следующая</a>
           </li>
         </ul>
       </div>
+      <section class="contacts">
+        <div class="contacts-info">
+          <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="button mailto" href="mailto:300493rt@gmail.com">Напишите нам</a>
+        </div>
+        <div class="map">
+          <!--Здесь будет интерактивная карта-->
+          <img src="img/map1.png" alt="Карта проезда">
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <ul>
-        <li>Давайте дружить, это выгодно</li>
-        <li>Скидка 10% для друзей из социальных сетей.</li>
-      </ul>
-      <ul>
-        <li><a href="#">VK</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
+    <footer class="page-footer main-footer">
+      <div class="footer-info">
+        <p class="appeal">Давайте дружить, это выгодно</p>
+        <p class="promo">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <ul class="socials-list list-styles-reset">
+        <li class="socials-item.vk"><a href="#">VK</a></li>
+        <li class="socials-item.fb"><a href="#">Facebook</a></li>
+        <li class="socials-item.insta"><a href="#">Instagram</a></li>
       </ul>
     </footer>
 
