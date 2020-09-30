@@ -52,6 +52,145 @@ body {
     background-repeat: no-repeat;
 }
 
+/*Grid*/
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    outline: 5px solid rgba(0, 255, 255, 0.7);
+    outline-offset: -5px;
+}
+
+.main-header {
+    margin-bottom: 10px;
+
+}
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.site-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-us-bg {
+    background-color: var(--basic-neutral);
+  }
+
+  .about-us {  
+    width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us-grid h2 {
+      order: 1;
+  }
+
+  .services-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0;
+      padding: 0;
+      column-gap: 100px;
+  }
+
+  .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      padding: 0;
+  }
+
+  .features-list {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      outline: 5px solid rgba(0, 255, 0, 0.7);
+  }
+
+  .features-statistics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+  }
+
+  .features-statistics-elements {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .indicators-item {
+      grid-row-start: 1;
+      grid-row-end: -1;
+  }
+
+.clients-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    outline: 5px solid rgba(0, 0, 255, 0.7);
+    align-items: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contacts-info {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    z-index: 2;
+    background-color: var(--basic-white);
+    width: 200px;
+    height: 200px;
+}
+
+.map {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 .page a {
     text-decoration: none;
     color: var(--basic-black);
@@ -63,6 +202,8 @@ img {
 }
 
 .main-navigation {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     font-size: 16px;
     line-height: 1.87;
     color: var(--basic-black);
@@ -222,9 +363,9 @@ img {
     color: var(--basic-black);
 }
 
-/* Clients lists */
+/* Clients list */
 
-.clients-lists {
+.clients-list {
     opacity: 0,2;
 }
 
@@ -249,6 +390,7 @@ img {
 }
 
 /*footer*/
+
 
 .appeal {
     font-size: 36px;
@@ -323,7 +465,7 @@ img {
     text-align: center;
 }
 
-.template button {
+.template-button {
     background-color: var(--special-red);
     display: block;
     font-size: 16px;
