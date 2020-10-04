@@ -54,7 +54,7 @@ body {
 
 /*Grid*/
 
-.page {
+/* .page {
     height: 100%;
 }
 
@@ -176,7 +176,143 @@ body {
     grid-row-start: 1;
     grid-row-end: -1;
     z-index: 1;
+} */
+
+
+/* Grid INNER */
+
+.inner-page {
+    display: grid;
+    grid-template-areas:
+        'gl-header'
+        'gl-main'
+        'gl-footer';
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        300px
+        1fr
+        225px;
+    grid-gap: 10px;
+    min-height: 100vh;
 }
+
+.main-header {
+    grid-area: gl-header;
+    display: grid;
+    grid-template-areas: 
+    'gl-navigation'
+    'gl-tittle';
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        150px
+        150px;
+}
+
+.main-navigation {
+    grid-area: gl-navigation;
+    display: grid;
+    grid-template-areas:
+    'gl-logo gl-site-navigation gl-basket';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-header-logo {
+    grid-area: gl-logo;
+}
+
+.site-navigation {
+    grid-area: gl-site-navigation;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.shoping-basket-link {
+    grid-area: gl-basket;
+}
+
+.page-title {
+    grid-area: gl-tittle;
+}
+
+.main-inner {
+    grid-area: gl-main;
+    display: grid;
+    grid-template-areas: 
+        'gl-filter gl-sorting'
+        'gl-filter gl-template'
+        'gl-filter gl-pagination';
+    grid-template-columns: 450px 900px;
+    grid-template-rows: 150px min-content 150px;
+}
+
+.sorting {
+    grid-area: gl-sorting;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+}
+
+.sorting-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.template-list {
+    grid-area: gl-template;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pagination-list {
+    grid-area: gl-pagination;
+    display: grid;
+    grid-template-columns: 50px 50px 50px min-content;
+    grid-template-rows: 50px;
+}
+
+.filter {
+    grid-area: gl-filter;
+}
+
+.page-footer {
+    grid-area: gl-footer;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contacts-info {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    z-index: 2;
+    background-color: var(--basic-white);
+    width: 200px;
+    height: 200px;
+}
+
+.map {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
 
 
 
