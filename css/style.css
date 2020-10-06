@@ -58,6 +58,10 @@ body {
     margin: 0 auto;
    }
 
+.main {
+    width: 100%;
+}
+
 .page {
     height: 100%;
 }
@@ -67,8 +71,6 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-    outline: 5px solid rgba(0, 255, 255, 0.7);
-    outline-offset: -5px;
 }
 
 .main-header {
@@ -93,7 +95,7 @@ body {
   }
 
   .about-us {  
-    width: 1180px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 10px;
     background-color: var(--basic-neutral);
@@ -119,21 +121,17 @@ body {
   .features {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 0;
-      padding: 0;
   }
 
   .features-list {
       grid-column-start: 1;
       grid-column-end: 1;
-      outline: 5px solid rgba(0, 255, 0, 0.7);
   }
 
   .features-statistics {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
   }
 
   .features-statistics-elements {
@@ -151,7 +149,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    outline: 5px solid rgba(0, 0, 255, 0.7);
     align-items: center;
 }
 
@@ -183,7 +180,7 @@ body {
 }
 
 .map-img {
-    width: 100%;
+    width: auto;
 }
 
 .gl-footer-info {
