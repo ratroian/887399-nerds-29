@@ -71,7 +71,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-}
+} */
 
 .main-header {
     margin-bottom: 10px;
@@ -79,20 +79,20 @@ body {
 
 }
 
-.main-navigation {
+/* .main-navigation {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
     margin-left: 140px;
     margin-right: 140px;
-}
+} */
 
-.site-navigation {
+/* .site-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
-  }
+  } */
 
   .about-us {  
     width: 100%;
@@ -152,7 +152,7 @@ body {
     align-items: center;
 }
 
-.contacts {
+/* .contacts {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -219,7 +219,7 @@ body {
     min-height: 100vh;
 }
 
-.main-header {
+.inner-page .main-header {
     grid-area: gl-header;
     display: grid;
     grid-template-areas: 
