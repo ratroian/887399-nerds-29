@@ -52,7 +52,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Grid*/
+/* Grid */
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -66,7 +66,7 @@ body {
     height: 100%;
 }
 
-.page-body {
+/* .page-body {
     height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -197,13 +197,13 @@ body {
 
 .promo {
     margin: 0;
-}
+} */
 
 
 /* Grid INNER */
 
 
-/* 
+
 .inner-page {
     display: grid;
     grid-template-areas:
@@ -359,7 +359,7 @@ body {
 
 .promo {
     margin: 0;
-} */
+}
 
 
 
