@@ -29,7 +29,7 @@
     <main class="main">
       <h1 class="container">Дизайн-студия "Нёрдс"</h1>
       <section class="about-us">
-        <div class="about-us-grid container">
+        <div class="about-us-flex container">
           <h2>О нас</h2>
           <div class="about-us-text"> 
             <p class="slogan">Долго, дорого, скурпулезно</p>
@@ -84,12 +84,18 @@
           <h2>Наша статистика</h2>
           <p class="indicators">с 2004 года Любим точность во всем:</p>
           <dl class="features-statistics-elements">
-            <dt class="indicators-item">Уровень самоотдачи</dt>
-            <dd class="indicators-percent">146<sup>%</sup></dd>
-            <dt class="indicators-item">Соблюдение сроков</dt>
-            <dd class="indicators-percent">100<sup>%</sup></dd>
-            <dt class="indicators-item">Минимальная предоплата</dt>
-            <dd class="indicators-percent">50<sup>%</sup></dd>
+            <div>
+              <dt class="indicators-item">Уровень самоотдачи</dt>
+              <dd class="indicators-percent">146<sup>%</sup></dd>
+            </div>
+            <div>
+              <dt class="indicators-item">Соблюдение сроков</dt>
+              <dd class="indicators-percent">100<sup>%</sup></dd>
+            </div>
+            <div>
+              <dt class="indicators-item">Минимальная предоплата</dt>
+              <dd class="indicators-percent">50<sup>%</sup></dd>
+          </div>
           </dl>
         </div>
       </section>
@@ -117,7 +123,7 @@
           <img class="map-img" src="img/map1.png" alt="Карта проезда">
         </div>
       </section>
-      <div class="container gl-footer-info">
+      <div class="container flex-footer-info">
         <ul class="socials-list list-styles-reset">
           <li class="socials-item.vk"><a href="#">VK</a></li>
           <li class="socials-item.fb"><a href="#">Facebook</a></li>
