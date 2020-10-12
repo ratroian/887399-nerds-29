@@ -93,6 +93,18 @@ body {
 
 .services-list {
     display: flex;
+
+}
+
+.services-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.services-item p{
+    margin-bottom: 30px;
 }
 
 .features {
