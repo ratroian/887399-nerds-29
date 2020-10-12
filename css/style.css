@@ -141,6 +141,53 @@ body {
 
 /* Flex-catalog */
 
+.main-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.filter {
+    width: 232px;
+}
+
+.template-flex {
+    width: 754px;
+    margin-bottom: 56px;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.sorting-list {
+    display: flex;
+}
+
+.sorting-list li {
+    margin-right: 10px;
+}
+
+.template-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    display: flex;
+    width: 754px;
+}
+
+
+}
+
+
 
 
 /* Flex-FOOTER */
