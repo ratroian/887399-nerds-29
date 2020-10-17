@@ -218,7 +218,6 @@ body {
     margin-bottom: 74px;
 }
 
-
 .contacts-info {
     display: flex;
     flex-direction: column;
@@ -248,7 +247,6 @@ body {
 .socials-list li {
     padding: 10px;
 }
-
 
 .map-img {
     width: 100%;
