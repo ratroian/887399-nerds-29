@@ -52,6 +52,18 @@ body {
     background-repeat: no-repeat;
 }
 
+.main h1, h2 {
+    visibility: hidden;
+}
+
+.main-inner h2 {
+    visibility: visible;
+}
+
+.template h2 {
+    visibility: hidden;
+}
+
 /* FLEX */
 
 .container {
@@ -108,7 +120,7 @@ body {
     
 }
 
-.services-item p{
+.services-item p {
     margin-bottom: 30px;
 }
 
@@ -194,7 +206,9 @@ body {
 .pagination-list {
     display: flex;
     width: 754px;
+    justify-content: space-between;
 }
+
 
 
 
@@ -537,6 +551,10 @@ img {
 
 .template-list {
     align-items: center;
+}
+
+.template {
+    padding-bottom: 54px;
 }
 
 /*Пагинация*/
