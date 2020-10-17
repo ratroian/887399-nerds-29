@@ -95,7 +95,6 @@ body {
 .about-us-flex {
     display: flex;
     height: 430px;
-
 }
 
 .about-us {
@@ -110,14 +109,12 @@ body {
 
 .services-list {
     display: flex;
-
 }
 
 .services-item {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
 }
 
 .services-item p {
@@ -135,14 +132,13 @@ body {
     flex-wrap: wrap;
     width: 650px;
     margin-right: 150px;
-
 }
 
 .features-statistics {
     width: 500px;
 }
 
-.features-statistics h2{
+.features-statistics h2 {
     display: none;
 }
 
@@ -155,7 +151,6 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
-
 }
 
 .clients-list {
@@ -187,8 +182,6 @@ body {
     align-items: center;
 }
 
-
-
 .sorting-list {
     display: flex;
 }
@@ -206,15 +199,11 @@ body {
 .pagination-list {
     display: flex;
     width: 754px;
-    justify-content: space-between;
 }
 
-
-
-
-
-
-
+.pagination-item {
+    margin-right: 50px;
+}
 
 /* Flex-FOOTER */
 
@@ -246,7 +235,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .contacts-inner {
@@ -267,26 +255,7 @@ body {
     height: 416px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
+/* End-FLEX */
 
 a {
     text-decoration: none;
