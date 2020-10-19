@@ -64,6 +64,19 @@ body {
     visibility: hidden;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* FLEX */
 
 .container {
@@ -99,12 +112,17 @@ body {
 
 .about-us {
     background-color: var(--basic-neutral);
+    height: 430px;
+    margin-bottom: 80px;
 }
 
 /* Flex-Index */
 
 .services {
     margin-bottom: 80px;
+    background-image: url(../img/line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .services-list {
@@ -119,12 +137,18 @@ body {
 
 .services-item p {
     margin-bottom: 30px;
+    width: 260px;
+    height: 48px;
 }
 
 .features {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 74px;
+    background-image: url(../img/line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .features-list {
@@ -135,16 +159,27 @@ body {
 }
 
 .features-statistics {
-    width: 500px;
+    width: 360px;
+    background-image: url(../img/nerds-illustration.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .features-statistics h2 {
-    display: none;
+    visibility: hidden;
 }
 
 .features-statistics-elements {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+}
+
+.clients {
+    background-image: url(../img/line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
 }
 
 .flex-items {
@@ -234,6 +269,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: turquoise;
 }
 
 .contacts-inner {
@@ -285,23 +321,75 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
+    display: block;
+    padding: 25px 20px;
 }
+
+.shoping-basket-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.shoping-basket-link::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 25px;
+    top: 30px;
+  }
+
+  .main-header-logo a{
+      display: block;
+      padding: 25px 20px;
+  }
   
-.site-navigation a:hover,
+/* .site-navigation a:hover,
 .site-navigation a:focus,
 .shoping-basket-link:hover,
 .shoping-basket-link:focus {
+    border-bottom: 2px solid var(--special-red);
+    padding-bottom: 13px;
+} */
+
+.site-navigation a:hover,
+.shoping-basket-link:hover {
+    color: var(--special-red)
+}
+
+.main-header-logo:focus,
+.site-navigation a:focus,
+.shoping-basket-link:focus {
+    opacity: 0.3;
+}
+
+.site-navigation a:active,
+.shoping-basket-link:active {
     border-bottom: 2px solid var(--special-red);
     padding-bottom: 13px;
 }
 
 /*about-us*/
 
+.about-us-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 400px;
+}
+
 .slogan:nth-child(1) {
     font-size: 55px;
     line-height: 1;
     font-weight: 500;
     color: #000000;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    height: 110px;
+    margin-top: 78px;
 }
 
 .under-slogan:nth-child(1) {
@@ -309,14 +397,22 @@ img {
     line-height: 1.5;
     color: #283136;
     font-weight: 400;
+    padding-bottom: 38px;
+    width: 400px;
+    height: 50px;
 }
 
 /*Slider*/
 .slider {
     width: 760px;
-    height: 431px;
+    height: 430px;
     margin: auto;
     overflow: hidden;
+}
+
+.slider img {
+    width: 760px;
+    height: 430px;
 }
 /* Button */
 
@@ -334,18 +430,34 @@ img {
 
 .about-us-link {
     background-color: var(--special-red);
+    padding: 16px 44px;
+    color: var(--basic-white);
+    border-radius: 3px;
+    margin-bottom: 80px;
 }
 
 .website {
     background-color: var(--special-red);
+    padding: 16px 44px;
+    color: var(--basic-white);
+    border-radius: 3px;
+    margin-bottom: 80px;
 }
 
 .apps {
     background-color: var(--special-green);
+    padding: 16px 44px;
+    color: var(--basic-white);
+    border-radius: 3px;
+    margin-bottom: 80px;
 }
 
 .presentation {
     background-color: var(--special-yellow);
+    padding: 16px 44px;
+    color: var(--basic-white);
+    border-radius: 3px;
+    margin-bottom: 80px;
 }
 
 .mailto {
