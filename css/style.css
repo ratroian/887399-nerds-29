@@ -269,7 +269,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: turquoise;
 }
 
 .contacts-inner {
@@ -282,6 +281,11 @@ body {
 
 .socials-list li {
     padding: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 .map-img {
@@ -428,7 +432,8 @@ img {
     font-weight: 500;
 }
 
-.about-us-link {
+.about-us-link,
+.website {
     background-color: var(--special-red);
     padding: 16px 44px;
     color: var(--basic-white);
@@ -436,12 +441,20 @@ img {
     margin-bottom: 80px;
 }
 
-.website {
-    background-color: var(--special-red);
-    padding: 16px 44px;
-    color: var(--basic-white);
-    border-radius: 3px;
-    margin-bottom: 80px;
+.website:hover,
+.about-us-link:hover {
+    background: #E74246;
+}
+
+.website:focus,
+.about-us-link:focus {
+    background: #D7373B;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.website .about-us-link:focus
+.about-us-link:focus {
+    opacity: 0.3;
 }
 
 .apps {
@@ -452,6 +465,15 @@ img {
     margin-bottom: 80px;
 }
 
+.apps:hover {
+    background: #00BC6C;
+}
+
+.apps:focus {
+    background: #00AA62;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .presentation {
     background-color: var(--special-yellow);
     padding: 16px 44px;
@@ -460,11 +482,33 @@ img {
     margin-bottom: 80px;
 }
 
+.presentation:hover {
+    background: #EAB534;
+}
+
+.presentation:focus {
+    background: #E5A722;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .mailto {
     background-color: var(--special-red);
     padding: 16px 44px;
     color: var(--basic-white);
     border-radius: 3px;
+}
+
+.mailto:hover {
+    background: #E74246;
+}
+
+.mailto:focus {
+    background: #D7373B;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.mailto a:focus {
+    opacity: 0.3;
 }
 
 /* Services*/
@@ -543,8 +587,16 @@ img {
 
 /* Clients list */
 
-.clients-list {
-    opacity: 0,2;
+.clients-list li {
+    opacity: 0.2;
+}
+
+.clients-list li:hover {
+    opacity: 1;
+}
+
+.clients-list li a:focus {
+    opacity: 0.1;
 }
 
 /* Contacts*/
