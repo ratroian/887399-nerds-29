@@ -179,7 +179,12 @@ body {
 .features-statistics-elements {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+}
+
+.features-statistics-elements div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
 .flex-items {
