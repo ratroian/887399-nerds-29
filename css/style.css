@@ -665,17 +665,20 @@ img {
 
 .clients-list li {
     opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    position: relative;
 }
 
-.clients-list li::after {
+.clients-list li:not(:last-child):after {
     content: '';
     width: 2px;
     height: 52px;
     background-color: var(--white-neutral);
     display: inline-block;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    margin: auto;
+    margin-left: 60px;
 }
 
 .clients-list li:hover {
