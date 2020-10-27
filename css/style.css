@@ -724,7 +724,7 @@ img {
     position: relative;
 }
 
-.clients-list li:not(:last-child):after {
+.clients-list li:not(:last-child)::after {
     content: '';
     width: 2px;
     height: 52px;
