@@ -871,11 +871,14 @@ img {
 .template-item::before {
     position: absolute;
     content: '';
-    width: 360px;
+    width: 100%;
     height: 40px;
     border-radius: 3px;
     background-color: var(--basic-strong-dark);
+    opacity: 0.3;
+    top: 0;
 }
+
 
 /* .template-list {
     align-items: center;
