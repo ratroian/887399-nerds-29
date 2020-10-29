@@ -1046,6 +1046,74 @@ img {
     margin-bottom: 32px;
 }
 
+.modal {
+    border: 5px solid black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* display: none; */
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    width: 960px;
+    height: 590px;
+}
+
+.modal h2 {
+    visibility: visible;
+    font-size: 45px;
+    color: var(--basic-black);
+    margin-top: 62px;
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+.modal-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.modal-close {
+    margin-top: 78px;
+    margin-right: 90px;
+    padding: 0;
+    background-color: var(--basic-white);
+    border: 0px var(--basic-white);
+}
+
+
+.send-mail-form {
+    width: 760px;
+    height: 352px;
+    margin-top: 36px;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.12;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.modal-username {
+    margin-right: 40px;
+}
+
+.form-user-name input {
+    width: 360px;
+    height: 50px;
+    border: 2px #158ebe;
+
+}
+
+.modal-arrange {
+    padding-left: 82px;
+    padding-right: 82px;
+}
+
 
 
 
