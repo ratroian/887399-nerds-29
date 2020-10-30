@@ -33,14 +33,14 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
+              <legend class="toolbar-price">Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
@@ -73,7 +73,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Производители:</legend>
+              <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-slider" id="filter-slider" checked>
@@ -97,7 +97,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
+            <button type="submit" class="filter-button button"><span>Показать</span></button>
           </form>
           <!--Здесь будет форма для фильтра-->
 
@@ -136,7 +136,7 @@
                 <a href="#">
                   <div class="pop-up">
                     <h3 class="item-name ">Pink</h3>
-                    <p class="item-description">Информационный сайт для туристов </p>
+                    <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
                     <button class="button template-button" type="submit">9 900 ₽</button>
                   </div>
                   <img src="img/catalog-pink.jpg" width="360" height="578" alt="Pink сервис">
@@ -146,7 +146,7 @@
                 <a href="#">
                   <div class="pop-up">
                     <h3 class="item-name ">Borodinski</h3>
-                    <p class="item-description">Информационный сайт для туристов </p>
+                    <p class="item-description">Сайт салона красоты.Для мужчин, да.</p>
                     <button class="button template-button" type="submit">9 900 ₽</button>
                   </div>
                   <img src="img/catalog-barbershop.jpg" width="360" height="578" alt="Borodinski Барбершоп">
@@ -156,7 +156,7 @@
                 <a href="#">
                   <div class="pop-up">
                     <h3 class="item-name ">Mishka</h3>
-                    <p class="item-description">Информационный сайт для туристов </p>
+                    <p class="item-description">Интернет-магазин вязаных игрушек</p>
                     <button class="button template-button" type="submit">9 900 ₽</button>
                   </div>
                   <img src="img/catalog-mishka.jpg" width="360" height="578" alt="Mishka игрушки ручной работы">
@@ -166,7 +166,7 @@
                 <a href="#">
                   <div class="pop-up">
                     <h3 class="item-name ">Aplus</h3>
-                    <p class="item-description">Информационный сайт для туристов </p>
+                    <p class="item-description">Лендинг курсов повышения квалификации</p>
                     <button class="button template-button" type="submit">9 900 ₽</button>
                   </div>
                   <img src="img/catalog-aplus.jpg" width="360" height="578" alt="Aplus обучение">
@@ -176,7 +176,7 @@
                 <a href="#">
                   <div class="pop-up">
                     <h3 class="item-name ">Кваст</h3>
-                    <p class="item-description">Информационный сайт для туристов </p>
+                    <p class="item-description">Промо-сайт производителя крафтового кваса</p>
                     <button class="button template-button" type="submit">9 900 ₽</button>
                   </div>
                   <img src="img/catalog-kvast.jpg" width="360" height="578" alt="Kvast крафтовый квас">
