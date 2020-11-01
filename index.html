@@ -28,19 +28,49 @@
 
     <main class="main">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-      <section class="about-us">
-        <div class="about-us-flex container">
+      <section class="about-us slider container">
+        <ul class="slider-list list-styles-reset">
+          <li class="slider-item slide slide-current">
+            <div class="slider-text">
+              <p class="slogan">Долго, дорого, скурпулезно</p>
+              <p class="under-slogan">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <!-- <a class="button about-us-link" href="#"><span>Узнать больше</span></a> -->
+            </div>
+            <div class="img-slide"><img src="img/index-slide1.png" width="760" height="430" alt="Presentation"></div>
+          </li>
+          <li class="slider-item slide">
+            <div class="slider-text">
+              <p class="slogan">Любим математику как никто другой</p>
+              <p class="under-slogan">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <!-- <a class="button about-us-link" href="#"><span>Узнать больше</span></a> -->
+            </div>
+            <div class="img-slide"><img src="img/index-slide2.png" width="760" height="430" alt="Presentation"></div>
+          </li>
+          <li class="slider-item slide">
+            <div class="slider-text">
+              <p class="slogan">Только ночь, только хардкор</p>
+              <p class="under-slogan">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <!-- <a class="button about-us-link" href="#"><span>Узнать больше</span></a> -->
+            </div>
+            <div class="img-slide"><img src="img/index-slide3.png" width="760" height="430" alt="Presentation"></div>
+          </li>
+        </ul>
+        <div class="buttons-slider">
+          <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
+          <div class="slider-controls">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+        <!-- <div class="about-us-flex container">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-us-text"> 
             <p class="slogan">Долго, дорого, скурпулезно</p>
             <p class="under-slogan">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <div class="button-slider">
               <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
-              <ul class="radio-slider">
-                <li class="slider-item"></li>
-                <li class="slider-item"></li>
-                <li class="slider-item"></li>
-              </ul>
+
             </div>
           </div>
           <div class="slider">
@@ -48,7 +78,7 @@
             <div class="slide slide2"><img src="img/index-slide2.jpg" width="760" height="430" alt="Apps"></div>
             <div class="slide slide3"><img src="img/index-slide3.jpg" width="760" height="430" alt="Web-site"></div>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="services container">
         <h2 class="visually-hidden">Предлагаемые услуги</h2>
