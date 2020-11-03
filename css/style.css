@@ -137,15 +137,15 @@ body {
 }
 
 .services-item:nth-child(1)::before {
-    background-image: url(../img/website.jpg);
+    background-image: url(../img/bg-website.jpg);
 }
 
 .services-item:nth-child(2)::before {
-    background-image: url(../img/apps.jpg);
+    background-image: url(../img/bg-apps.jpg);
 }
 
 .services-item:nth-child(3)::before {
-    background-image: url(../img/presentation.jpg);
+    background-image: url(../img/bg-presentation.jpg);
 }
 
 .services-item p {
@@ -423,6 +423,7 @@ body {
     border-radius: 3px;
     background-color: var(--white-neutral);
     margin-top: 18px;
+    cursor: pointer;
 }
 
 .filter-button span {
@@ -794,6 +795,7 @@ img {
     font-size: 16px;
     line-height: 1.125;
     font-weight: 500;
+    cursor: pointer;
 }
 
 
@@ -1150,10 +1152,8 @@ img {
     width: 360px;
 }
 
-.template-item:hover .pop-up{
+.template-item:hover .product-preview {
     height: 230px;
-    padding-top: 26px;
-    padding-bottom: 44px;
 }
 
 .template-item:nth-child(1n) {
@@ -1241,7 +1241,7 @@ img {
     opacity: 0.3;
 }
 
-.pop-up {
+.product-preview {
     background-color: var(--white-neutral);
     text-align: center;
     position: absolute;
@@ -1252,7 +1252,10 @@ img {
     height: 0;
     transition: height linear 0.3s;
     overflow: hidden;
-    padding: 0 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 26px;
+    padding-bottom: 44px;
 }
 
 .template-button {
