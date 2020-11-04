@@ -28,40 +28,43 @@
 
     <main class="main">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-      <section class="about-us slider container">
-        <ul class="slider-list list-styles-reset">
-          <li class="slider-item slide slide-current">
-            <div class="slider-text">
-              <p class="slogan">Долго, дорого, скурпулезно</p>
-              <p class="under-slogan">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
+      <section class="about-us slider">
+        <div class="container">
+          <ul class="slider-list list-styles-reset">
+            <li class="slider-item slide slide-current">
+              <div class="slider-text">
+                <p class="slogan">Долго, дорого, скурпулезно</p>
+                <p class="under-slogan">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
+              </div>
+              <div class="img-slide"><img src="img/index-slide1.png" width="760" height="430" alt="Presentation"></div>
+            </li>
+            <li class="slider-item slide">
+              <div class="slider-text">
+                <p class="slogan">Любим математику как никто другой</p>
+                <p class="under-slogan">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
+              </div>
+              <div class="img-slide"><img src="img/index-slide2.png" width="760" height="430" alt="Presentation"></div>
+            </li>
+            <li class="slider-item slide">
+              <div class="slider-text">
+                <p class="slogan">Только ночь, только хардкор</p>
+                <p class="under-slogan">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
+              </div>
+              <div class="img-slide"><img src="img/index-slide3.png" width="760" height="430" alt="Presentation"></div>
+            </li>
+          </ul>
+          <div class="buttons-slider">
+            <div class="slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
+              <button type="button" aria-label="Третий слайд"></button>
             </div>
-            <div class="img-slide"><img src="img/index-slide1.png" width="760" height="430" alt="Presentation"></div>
-          </li>
-          <li class="slider-item slide">
-            <div class="slider-text">
-              <p class="slogan">Любим математику как никто другой</p>
-              <p class="under-slogan">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-              <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
-            </div>
-            <div class="img-slide"><img src="img/index-slide2.png" width="760" height="430" alt="Presentation"></div>
-          </li>
-          <li class="slider-item slide">
-            <div class="slider-text">
-              <p class="slogan">Только ночь, только хардкор</p>
-              <p class="under-slogan">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="button about-us-link" href="#"><span>Узнать больше</span></a>
-            </div>
-            <div class="img-slide"><img src="img/index-slide3.png" width="760" height="430" alt="Presentation"></div>
-          </li>
-        </ul>
-        <div class="buttons-slider">
-          <div class="slider-controls">
-            <button type="button" aria-label="Первый слайд"></button>
-            <button type="button" aria-label="Второй слайд"></button>
-            <button type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
+        
         <!-- <div class="about-us-flex container">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-us-text"> 
@@ -218,22 +221,20 @@
       </div>
       <form class="send-mail-form" action="https://echo.htmlacademy.ru/courses" method="GET">
         <div class="modal-username">
-          <label class="form-username" for="username">Ваше имя<br>
+          <label class="form-username" for="username"><p>Ваше имя</p>
             <input type="text" name="username" id="username" placeholder="Имя Фамилия">
           </label>
         </div>
         <div class="modal-email">
-          <label class="form-email" for="email">Ваш email:<br>
+          <label class="form-email" for="email"><p>Ваш email:</p>
             <input type="email" name="email" id="email" placeholder="email@example.com">
           </label>
         </div>
         <br>
         <div class="form-textarea">
           <p>Текст письма:</p>
-          <textarea name="massage" id="massage-field" rows="5" cols="95" placeholder="В свободной форме">
-          </textarea>
+          <textarea name="massage" id="massage-field" placeholder="В свободной форме">В свободной форме</textarea>
         </div>
-        <br>
         <input class="modal-arrange button mailto" type="submit" value="Отправить">
       </form>
     </section>
