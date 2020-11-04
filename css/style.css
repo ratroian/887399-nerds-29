@@ -372,10 +372,25 @@ body {
     position: absolute;
     left: -38px;
     top: -2px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    /* background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat; */
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: -2px;
     width: 23px;
     height: 23px;
     /* border: 2px solid #000000;
     border-radius: 3px; */
+    border: none;
     background-image: url(../img/checkbox.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -483,6 +498,7 @@ body {
 .arrows {
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 .arrows li {
@@ -1152,7 +1168,11 @@ img {
     opacity: 0.6;
 }
 
-.sorting-list li:focus {
+.sorting-list li:active {
+    opacity: 1;
+}
+
+.sorting-list .sorting-active {
     opacity: 1;
 }
 
@@ -1266,6 +1286,13 @@ img {
     opacity: 0.3;
 }
 
+.pagination-item .page-active {
+    border: 3px solid #DBDBDB;
+    background-color: var(--basic-white);
+    padding: 13px 17px;
+
+}
+
 .product-preview {
     background-color: var(--white-neutral);
     text-align: center;
@@ -1277,6 +1304,19 @@ img {
     padding-top: 26px;
     padding-bottom: 44px;
     display: none;
+}
+
+.product-preview .template-button {
+    border-radius: 3px;
+}
+
+.product-preview .template-button:hover {
+    background-color: #E74246;
+}
+
+.product-preview .template-button:active {
+    background-color: #D7373B;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .template-item-link {
@@ -1305,6 +1345,15 @@ img {
     color: var(--basic-black);
     margin-top: 0;
     margin-bottom: 12px;
+}
+
+.item-name:hover {
+    color: var(--special-red)
+}
+
+.item-name:active {
+    color: var(--basic-black);
+    opacity: 0.3;
 }
 
 .item-description {
@@ -1356,6 +1405,15 @@ img {
     padding: 0;
     background-color: var(--basic-white);
     border: 0px var(--basic-white);
+    opacity: 0.2;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
 }
 
 .send-mail-form {
@@ -1404,7 +1462,17 @@ img {
     margin-bottom: 10px;
 }
 
+.form-input {
+    opacity: 0.3;
+}
 
+.form-input:hover {
+    opacity: 0.6;
+}
+
+.form-input:focus {
+    opacity: 1;
+}
 
 
 
