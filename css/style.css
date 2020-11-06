@@ -81,7 +81,7 @@ body {
 
 .container {
     width: 1160px;
-    margin: 0 auto;
+    margin: 0 140px;
 }
 
 .main-header .container {
@@ -97,23 +97,25 @@ body {
     margin-left: 0;
     justify-content: space-between;
     align-items: center;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--basic-black);
 }
 
 .site-navigation {
     display: flex;
-    width: 438px;
     justify-content: space-between;
 }
 
-.about-us-flex {
-    display: flex;
-    height: 430px;
+.site-navigation-item{
+    padding-right: 42px;
 }
 
 .about-us {
     background-color: var(--white-neutral);
     height: 430px;
     margin-bottom: 80px;
+
 }
 
 /* Flex-Index */
@@ -629,16 +631,9 @@ img {
     height: auto;
 }
 
-.main-navigation {
-
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--basic-black);
-    /* margin-bottom: 88px; */
-}
-
 .main-header {
     background-color: var(--white-neutral);
+    padding-top: 48px;
 }
 
 .inner-page .main-header {
@@ -648,7 +643,7 @@ img {
   
       /* User navigation */
   
-.site-navigation a,
+.site-navigation-item a,
 .shoping-basket-link {
     color: var(--basic-black);
     text-transform: uppercase;
@@ -656,7 +651,7 @@ img {
     font-size: 16px;
     line-height: 1.87;
     display: block;
-    padding: 25px 20px;
+    padding-top: 14px;
 }
 
 .shoping-basket-link {
@@ -672,16 +667,19 @@ img {
     background-image: url(../img/basket.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    left: 25px;
-    top: 30px;
+    left: 10px;
+    top: 20px;
 }
 
-  .main-header-logo a{
+  .main-header-logo {
       display: block;
-      padding: 25px 20px;
-}
+      padding: 0;
+      margin: 0;
+      width: 160px;
+      height: 66px;
+}     
 
-  .main-header-logo a:focus {
+  .main-header-logo:focus {
       opacity: 0.3;
 }
 /* .site-navigation a:hover,
@@ -735,7 +733,7 @@ img {
     margin-top: 78px;
 }
 
-.under-slogan:nth-child(1) {
+.slider-text .under-slogan {
     font-size: 16px;
     line-height: 1.5;
     color: #283136;
@@ -847,7 +845,7 @@ img {
 .about-us-link,
 .website {
     background-color: var(--special-red);
-    padding: 16px 44px;
+    padding: 16px 55px;
     color: var(--basic-white);
     border-radius: 3px;
     margin-bottom: 80px;
