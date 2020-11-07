@@ -196,6 +196,13 @@ body {
     align-items: flex-end;
 }
 
+.features-statistics-text {
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .features-statistics-elements div {
     display: flex;
     flex-direction: column;
@@ -215,7 +222,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     padding-right: 16px;
-    padding-top: 14px;
 }
 
 .flex-items {
@@ -557,7 +563,7 @@ body {
     position: relative;
 }
 
-.contacts::after {
+/* .contacts::after {
     position: absolute;
     z-index: 6;
     width: 231px;
@@ -566,9 +572,21 @@ body {
     left: 40%;
     background-image: url(../img/map-marker.png);
     background-repeat: no-repeat;
-}
+} */
 
 .contacts-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--basic-white);
+    z-index: 2;
+    position: absolute;
+    padding: 50px;
+    width: 320px;
+    box-sizing: border-box;
+    top: 132px;
+}
+
+.contacts-index .contacts-info {
     display: flex;
     flex-direction: column;
     background-color: var(--basic-white);
@@ -1038,12 +1056,14 @@ img {
     text-align: center;
     color: var(--basic-black);
     width: 358px;
+    margin-top: 0;
 }
 
 .indicators-item {
     font-size: 16px;
     line-height: 1.125;
     color: var(--light-black);
+    padding-top: 10px;
 }
 
 .indicators-percent {
@@ -1052,7 +1072,6 @@ img {
     font-weight: 700;
     color: var(--basic-black);
     margin-left: 0;
-    padding-top: 12px;
 }
 
 .statistics sup {
@@ -1431,7 +1450,7 @@ img {
     visibility: visible;
     font-size: 45px;
     color: var(--basic-black);
-    margin-top: 62px;
+    margin-top: 56px;
     margin-left: 100px;
     margin-bottom: 0;
 }
@@ -1444,7 +1463,7 @@ img {
 }
 
 .modal-close {
-    margin-top: 78px;
+    margin-top: 62px;
     margin-right: 90px;
     padding: 0;
     background-color: var(--basic-white);
@@ -1481,7 +1500,7 @@ img {
 .modal-arrange {
     padding-left: 82px;
     padding-right: 82px;
-    margin-top: 48px;
+    margin-top: 44px;
     margin-right: 760px;
 }
 
@@ -1490,13 +1509,13 @@ img {
 }
 
 .form-textarea textarea {
-    width: 760px;
-    height: 118px;
+    width: 756px;
+    height: 110px;
 }
 
 .form-email input, .form-username input{
     width: 352px;
-    height: 50px;
+    height: 44px;
 }
 
 .form-username p,
