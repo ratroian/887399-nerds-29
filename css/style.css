@@ -1104,6 +1104,14 @@ img {
     opacity: 0.2;
 }
 
+.logo-clients:nth-child(2) {
+    padding: 0 44px;
+}
+
+.logo-clients:nth-child(3) {
+    padding-right: 55px;
+}
+
 .logo-clients:nth-child(2)::before {
     content: '';
     width: 2px;
@@ -1427,7 +1435,7 @@ img {
     margin-bottom: 32px;
     margin-left: 52px;
     margin-right: 52px;
-    width: 256px;
+    width: 200px;
 
 }
 
