@@ -292,6 +292,7 @@ body {
 .price-controls {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 23px;
 }
 
 .price-controls label {
@@ -329,10 +330,6 @@ body {
     margin: 0;
     margin-bottom: 30px;
     border: none;
-}
-
-.filter fieldset:first-child {
-    margin-bottom: 54px;
 }
 
 .filter legend {
@@ -404,7 +401,7 @@ body {
 }
 
 .filter-radio, .filter-checkbox {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-left: 38px;
 }
 
@@ -446,7 +443,7 @@ body {
     padding: 16px 88px;
     border-radius: 3px;
     background-color: var(--white-neutral);
-    margin-top: 18px;
+    margin-top: 4px;
     cursor: pointer;
 }
 
@@ -471,7 +468,7 @@ body {
 
 
 .template-flex {
-    width: 754px;
+    width: 760px;
     margin-bottom: 0;
 }
 
@@ -557,6 +554,18 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 62px;
+    position: relative;
+}
+
+.contacts::after {
+    position: absolute;
+    z-index: 6;
+    width: 231px;
+    height: 190px;
+    top: 50%;
+    left: 40%;
+    background-image: url(../img/map-marker.png);
+    background-repeat: no-repeat;
 }
 
 .contacts-info {
@@ -569,6 +578,18 @@ body {
     width: 320px;
     box-sizing: border-box;
     top: 132px;
+}
+
+.contacts-inner .contacts-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--basic-white);
+    z-index: 2;
+    position: absolute;
+    padding: 50px;
+    width: 320px;
+    box-sizing: border-box;
+    top: 112px;
 }
 
 .footer-info {
@@ -645,7 +666,7 @@ img {
 }
 
 .inner-page .main-header {
-    height: 354px;
+    height: 308px;
     margin-bottom: 54px;
 }
   
@@ -1151,7 +1172,7 @@ img {
     font-weight: 500;
     color: #000000;
     text-align: center;
-    margin-top: 88px;
+    margin-top: 78px;
     margin-bottom: 0;
     padding-top: 0;
 }
@@ -1250,7 +1271,7 @@ img {
 } */
 
 .template {
-    padding-bottom: 24px;
+    padding-bottom: 21px;
 }
 
 /*Пагинация*/
@@ -1285,7 +1306,7 @@ img {
     display: block;
     padding: 16px 20px;
     background-color: var(--white-neutral);
-    margin-right: 10px;
+    margin-right: 12px;
     border-radius: 3px;
 }
 
@@ -1324,7 +1345,7 @@ img {
     bottom: 0;
     right: 0;
     box-sizing: border-box;
-    padding-top: 26px;
+    padding-top: 24px;
     padding-bottom: 44px;
     display: none;
 }
@@ -1367,7 +1388,7 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .item-name:hover {
