@@ -1319,6 +1319,10 @@ img {
     width: 360px;
 }
 
+.template-item:hover {
+    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+}
+
 .template-item:hover .product-preview {
     /* height: 230px; */
     display: flex;
@@ -1431,6 +1435,10 @@ img {
     display: none;
 }
 
+.template-item-link img {
+    border-radius: 5px;
+}
+
 .product-preview .template-button {
     border-radius: 3px;
 }
@@ -1495,13 +1503,12 @@ img {
 
 .modal {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-    /* position: fixed; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    /* display: none; */
+    display: none;
     color: var(--basic-black);
     background-color: var(--basic-white);
     width: 960px;
