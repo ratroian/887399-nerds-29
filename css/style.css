@@ -665,6 +665,10 @@ body {
     position: relative;
 }
 
+.map-catalog {
+    padding-top: 60px;
+}
+
 .point-map {
     position: absolute;
     z-index: 2;
