@@ -126,10 +126,15 @@ body {
 .site-navigation {
     display: flex;
     justify-content: space-between;
+    padding-right: 33px;
 }
 
-.site-navigation-item{
-    padding-right: 42px;
+.site-navigation-item {
+    padding-right: 46px;
+}
+
+.site-navigation-item:last-child {
+    padding: 0;
 }
 
 .about-us {
@@ -513,14 +518,14 @@ body {
 }
 
 .sorting-list li {
-    margin-right: 25px;
+    margin-right: 26px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
 }
 
 .sorting-list li:last-child {
-    margin-right: 46px;
+    margin-right: 58px;
 }
 
 .arrows {
@@ -530,7 +535,7 @@ body {
 }
 
 .arrows li {
-    margin-right: 18px;
+    margin-right: 20px;
 }
 
 .arrows li:last-child {
@@ -759,13 +764,6 @@ img {
   .main-header-logo:focus {
       opacity: 0.3;
 }
-/* .site-navigation a:hover,
-.site-navigation a:focus,
-.shoping-basket-link:hover,
-.shoping-basket-link:focus {
-    border-bottom: 2px solid var(--special-red);
-    padding-bottom: 13px;
-} */
 
 .site-navigation a:hover,
 .shoping-basket-link:hover {
@@ -1609,6 +1607,10 @@ img {
 
 .form-input:focus {
     opacity: 1;
+}
+
+.page-body {
+    padding-bottom: 76px;
 }
 
 
