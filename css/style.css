@@ -1511,6 +1511,7 @@ img {
     background-color: var(--basic-white);
     width: 960px;
     height: 590px;
+    position: fixed;
 }
 
 .modal h2 {
@@ -1590,15 +1591,9 @@ img {
     padding-left: 16px;
 }
 
-.form-username p,
-.form-email p,
-.form-textarea p {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
 .form-input {
     opacity: 0.3;
+    margin-top: 10px;
 }
 
 .form-input:hover {
