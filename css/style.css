@@ -662,6 +662,15 @@ body {
 
 .map {
     padding-top: 80px;
+    position: relative;
+}
+
+.point-map {
+    position: absolute;
+    z-index: 2;
+    bottom: 148px;
+    right: 300px;
+}
 }
 
 .inner-page .map {
@@ -706,6 +715,10 @@ img {
     line-height: 1.87;
     display: block;
     padding-top: 14px;
+}
+
+.site-navigation-item a {
+    position: relative;
 }
 
 .shoping-basket-link {
@@ -762,9 +775,14 @@ img {
     color: var(--basic-black);
 }
 
-.site-navigation .link-active a {
-    border-bottom: 2px solid var(--special-red);
-    padding-bottom: 12px;
+.site-navigation-item .link-active::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--special-red);
+    bottom: -16px;
+    left: 0;
 }
 
 /*about-us*/
@@ -1092,17 +1110,18 @@ img {
 
 .clients {
     padding-top: 40px;
+    padding-bottom: 42px;
+    border-bottom: 2px solid var(--white-neutral);
 }
 
-.clients-list::after {
+/* .clients-list::after {
     position: absolute;
     content: none;
     width: 100%;
     height: 2px;
     background-color: var(--white-neutral);
     margin-top: 44px;
-}
-
+} */
 
 .logo-clients a {
     display: flex;
@@ -1112,20 +1131,44 @@ img {
 
 .logo-clients:nth-child(2) {
     padding: 0 44px 0 29px;
+    position: relative;
 }
 
 .logo-clients:nth-child(3) {
     padding-right: 60px;
+    position: relative;
 }
 
 .logo-clients:nth-child(2)::before {
-    content: none;
+    content: '';
     width: 2px;
     height: 52px;
     background-color: var(--white-neutral);
-    margin: auto;
-    margin-left: 20px;
+    position: absolute;
+    top: 14px;
+    left: -16px;
 }
+
+.logo-clients:nth-child(2)::after {
+    content: '';
+    width: 2px;
+    height: 52px;
+    background-color: var(--white-neutral);
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+
+.logo-clients:nth-child(3)::after {
+    content: '';
+    width: 2px;
+    height: 52px;
+    background-color: var(--white-neutral);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 .clients-list a:hover {
     opacity: 1;
@@ -1520,6 +1563,8 @@ img {
 .form-textarea textarea {
     width: 756px;
     height: 110px;
+    padding-top: 16px;
+    padding-left: 16px;
 }
 
 .form-email input, .form-username input{
