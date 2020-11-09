@@ -18,7 +18,7 @@
           <ul class="list-styles-reset site-navigation">
             <li class="site-navigation-item"><a href="#">Студия</a></li>
             <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-            <li class="site-navigation-item"><a class="link-active" href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-item"><a class="link-active">Магазин</a></li>
             <li class="site-navigation-item"><a href="#">Контакты</a></li>
           </ul>
           <a class="shoping-basket-link" href="">Корзина</a>
@@ -44,10 +44,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    <span>от</span><input name="min-price" value="0">
+                    от<input name="min-price" value="0">
                   </label>
                   <label class="max-price">
-                    <span>до</span><input name="max-price" value="15000">
+                    до<input name="max-price" value="15000">
                   </label>
                 </div>
               </div>
@@ -75,28 +75,28 @@
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-slider" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-slider" value="slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-advantages">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-advantages" value="block-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-news" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-news" value="news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-gallery">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-gallery" value="gallary">
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-basket">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="filter-checkbox" id="filter-basket" value="basket">
                   <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter-button button"><span>Показать</span></button>
+            <button type="submit" class="filter-button button">Показать</button>
           </form>
           <!--Здесь будет форма для фильтра-->
 
@@ -186,16 +186,16 @@
                   <!--Пагинация-->
           <ul class="pagination-list list-styles-reset">
             <li class="pagination-item">
-              <a class="pag-interaction page-active"><span>1</span></a>
+              <a class="pag-interaction page-active">1</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pag-interaction"><span>2</span></a>
+              <a href="#" class="pag-interaction">2</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pag-interaction"><span>3</span></a>
+              <a href="#" class="pag-interaction">3</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pag-interaction"><span>Следующая</span></a>
+              <a href="#" class="pag-interaction">Следующая</a>
             </li>
           </ul>
         </div>
@@ -209,7 +209,7 @@
             <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
             <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <a class="button mailto" href="mailto:300493rt@gmail.com"><span>Напишите нам</span></a>
+            <a class="button mailto" href="mailto:300493rt@gmail.com">Напишите нам</a>
           </div>
         </div>
         <div class="map map-catalog">
@@ -223,13 +223,17 @@
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+              <svg width="27" height="16" viewBox="0 0 128 76">
+                <path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/>
+              </svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+              <svg width="19" height="22" viewBox="0 0 10.15 21.74">
+                <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
+              </svg>
             </a>
           </li>
           <li>
@@ -237,7 +241,7 @@
               <span class="visually-hidden">Инстаграм</span>
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
-                </svg>
+              </svg>
             </a>
           </li>
         </ul>
@@ -257,20 +261,17 @@
           </svg>
         </button>
       </div>
-      <form class="send-mail-form" action="https://echo.htmlacademy.ru/courses" method="GET">
+      <form class="send-mail-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <div class="modal-username">
-          <label class="form-username" for="username">Ваше имя:<br>
-            <input class="form-input" type="text" name="username" id="username" placeholder="Имя Фамилия">
-          </label>
+          <label class="form-username label-form" for="username">Ваше имя:</label>
+          <input class="form-input" type="text" name="username" id="username" placeholder="Имя Фамилия">
         </div>
         <div class="modal-email">
-          <label class="form-email" for="email">Ваш email:<br>
-            <input class="form-input" type="email" name="email" id="email" placeholder="email@example.com">
-          </label>
+          <label class="form-email label-form" for="email">Ваш email:</label>
+          <input class="form-input" type="email" name="email" id="email" placeholder="email@example.com">
         </div>
-        <br>
         <div class="form-textarea">
-          Текст письма:<br>
+          <label for="massage-field label-form" class="massage">Текст письма:</label>
           <textarea class="form-input" name="massage" id="massage-field" placeholder="В свободной форме">В свободной форме</textarea>
         </div>
         <input class="modal-arrange button mailto" type="submit" value="Отправить">
