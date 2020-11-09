@@ -665,7 +665,12 @@ body {
 .map {
     padding-top: 80px;
     position: relative;
+}
+
+.map-img {
     background-color: var(--basic-dark);
+    width: 1440px;
+    height: 416px;
 }
 
 .map-catalog {
